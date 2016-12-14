@@ -53,6 +53,7 @@ namespace PM.Gui
         {
             if (!string.IsNullOrEmpty(this.richTextBox1.SelectedText))
             {
+                Clipboard.Clear();
                 Clipboard.SetText(this.richTextBox1.SelectedText);
             }
         }

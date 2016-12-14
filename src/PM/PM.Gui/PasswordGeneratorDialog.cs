@@ -53,6 +53,7 @@ namespace PM.Gui
 
         private void HandleToClipboardClick(object sender, EventArgs e)
         {
+            Clipboard.Clear();
             Clipboard.SetText(this.keyTextBox.Text);
         }
 
@@ -65,6 +66,7 @@ namespace PM.Gui
         {
             if (!string.IsNullOrWhiteSpace(this.keyTextBox.Text))
             {
+                Clipboard.Clear();
                 Clipboard.SetText(this.keyTextBox.Text);
             }
         }

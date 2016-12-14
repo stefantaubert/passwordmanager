@@ -123,6 +123,7 @@ namespace PM.Gui
 
                 if (!string.IsNullOrWhiteSpace(text))
                 {
+                    Clipboard.Clear();
                     Clipboard.SetText(text);
                 }
             }
