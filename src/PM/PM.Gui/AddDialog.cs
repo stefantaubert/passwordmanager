@@ -107,8 +107,11 @@ namespace PM.Gui
                 this.CreatedEntry = newEntry;
                 ModelLoader.SaveModel();
 
-                Clipboard.Clear();
-                Clipboard.SetText(this.keyTextBox.Text);
+                if (!string.IsNullOrEmpty(this.keyTextBox.Text))
+                {
+                    Clipboard.Clear();
+                    Clipboard.SetText(this.keyTextBox.Text);
+                }               
 
                 this.DialogResult = DialogResult.OK;
             }

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Password Manager")]
-[assembly: AssemblyCopyright("Copyright © Stefan Taubert 2016")]
+[assembly: AssemblyCopyright("Copyright © Stefan Taubert 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
