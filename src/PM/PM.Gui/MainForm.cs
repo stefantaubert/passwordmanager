@@ -193,16 +193,14 @@ namespace PM.Gui
 
         private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            this.ShowEditContentDialog();
+            if (EntrySelected)
+            {
+                this.ShowEditContentDialog();
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (this.EntrySelected)
-            //{
-            //    this.SelectedEntry.Requests++;
-            //}
-
             this.RenderForm();
         }
 

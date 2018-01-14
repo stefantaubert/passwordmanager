@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Passwort Manager")]
 [assembly: AssemblyDescription("Simple tool for managing passwords and keys.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("http://stefantaubert.com")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Password Manager")]
 [assembly: AssemblyCopyright("Copyright © Stefan Taubert 2018")]
 [assembly: AssemblyTrademark("")]
