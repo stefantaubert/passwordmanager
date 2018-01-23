@@ -1,9 +1,9 @@
-<p align="center">
-  <img src="/icon/final_square.png">
-</p>
-
 # Password Manager
 Simple tool for managing passwords and keys.
+
+<p align="center">
+  <img width="256px" height="256px" src="/icon/final_square.png">
+</p>
 
 ## Screenshots
 First you need to set a password:
