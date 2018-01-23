@@ -21,14 +21,12 @@ namespace PM.Core
             this.Label = name;
             this.Created = created;
             this.Content = string.Empty;
-            this.Requests = 0;
         }
 
         protected Entry(SerializationInfo info, StreamingContext context)
         {
             this.Label = info.GetString("Label");
             this.Content = info.GetString("Content");
-            this.Requests = info.GetInt32("Requests");
             this.Created = info.GetDateTime("Created");
         }
 
@@ -53,18 +51,10 @@ namespace PM.Core
             set;
         }
 
-        [XmlElement("Requests")]
-        public int Requests
-        {
-            get;
-            set;
-        }
-
         public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             info.AddValue("Label", this.Label);
             info.AddValue("Content", this.Content);
-            info.AddValue("Requests", this.Requests);
             info.AddValue("Created", this.Created);
         }
     }

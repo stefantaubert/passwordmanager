@@ -11,6 +11,8 @@ namespace PM.Gui
 {
     partial class AboutDialog : Form
     {
+        private const string personalPage = "http://www.stefantaubert.com";
+
         public AboutDialog()
         {
             InitializeComponent();
@@ -19,6 +21,7 @@ namespace PM.Gui
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.textBoxDescription.Text = AssemblyDescription;
+            this.linkLabel1.Text = personalPage;
         }
 
         #region Assemblyattributaccessoren
@@ -100,5 +103,16 @@ namespace PM.Gui
             }
         }
         #endregion
+
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(personalPage);
+        }
+
+        private void AboutDialog_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

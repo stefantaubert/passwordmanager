@@ -150,12 +150,17 @@ namespace PM.Gui
             {
                 Core.XmlSerialization.SerializeModel(ModelLoader.CurrentModel, saveFileDialog1.FileName);
 
-                MessageBox.Show("Export was successful!");
+                MessageBox.Show("Export was successful!", "Export");
             }
         }
 
         private void ImportFromXml()
         {
+            if (MessageBox.Show("All current keys will be lost after import!\n\nDo you want to continue?", "Import", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+            {
+                return;
+            }
+
             if (this.openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 var importedModel = Core.XmlSerialization.DeserializeModel(this.openFileDialog1.FileName);
@@ -167,7 +172,7 @@ namespace PM.Gui
                 this.RenderForm();
                 this.sideMenuListBox.SelectedItem = null;
 
-                MessageBox.Show("Import was successful!");
+                MessageBox.Show("Import was successful!", "Import");
             }
         }
 
@@ -289,7 +294,7 @@ namespace PM.Gui
         }
 
         private void ShowEditContentDialog()
-        { 
+        {
             using (var dlg = new EditContentDialog(this.SelectedEntry))
             {
                 if (dlg.ShowDialog() == DialogResult.OK)
@@ -335,7 +340,7 @@ namespace PM.Gui
             //    this.RenderItems();
             //    this.RenderForm();
             //}
-      }
+        }
 
         private void filterTextBox_Enter(object sender, EventArgs e)
         {
@@ -355,6 +360,23 @@ namespace PM.Gui
             }
 
             this.filterTextBox.Focus();
+        }
+
+        private void datenAlsCSVExportierenToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.ExportAsMarkdown();
+        }
+
+        private void ExportAsMarkdown()
+        {
+            this.saveFileDialog1.Filter = "Markdown File|*.markdown";
+
+            if (this.saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Core.MarkdownExporter.Export(ModelLoader.CurrentModel, saveFileDialog1.FileName);
+
+                MessageBox.Show("Export was successful!", "Export");
+            }
         }
     }
 }

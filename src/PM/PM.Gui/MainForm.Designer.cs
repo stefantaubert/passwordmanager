@@ -31,29 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dateiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importFromXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.datenAlsCSVExportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.passwordGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filterTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.searchLabel = new System.Windows.Forms.ToolStripLabel();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.sideMenuListBox = new System.Windows.Forms.ListBox();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.addBtn = new System.Windows.Forms.ToolStripButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.editContentBtn = new System.Windows.Forms.ToolStripButton();
-            this.copyBtn = new System.Windows.Forms.ToolStripButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -61,6 +50,18 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.versionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addBtn = new System.Windows.Forms.ToolStripButton();
+            this.editContentBtn = new System.Windows.Forms.ToolStripButton();
+            this.copyBtn = new System.Windows.Forms.ToolStripButton();
+            this.importFromXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.datenAlsCSVExportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.passwordGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -83,30 +84,6 @@
             this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
-            // addToolStripMenuItem
-            // 
-            this.addToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addToolStripMenuItem.Image")));
-            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.addToolStripMenuItem.Text = "Add Entry";
-            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editToolStripMenuItem.Image")));
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.editToolStripMenuItem.Text = "Rename";
-            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.deleteToolStripMenuItem.Text = "Delete Entry";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -117,7 +94,7 @@
             this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(602, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(604, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.TabStop = true;
             this.menuStrip1.Text = "menuStrip1";
@@ -127,6 +104,7 @@
             // 
             this.dateiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importFromXMLToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.datenAlsCSVExportierenToolStripMenuItem,
             this.toolStripSeparator1,
             this.beendenToolStripMenuItem});
@@ -134,34 +112,10 @@
             this.dateiToolStripMenuItem.Size = new System.Drawing.Size(37, 23);
             this.dateiToolStripMenuItem.Text = "&File";
             // 
-            // importFromXMLToolStripMenuItem
-            // 
-            this.importFromXMLToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("importFromXMLToolStripMenuItem.Image")));
-            this.importFromXMLToolStripMenuItem.Name = "importFromXMLToolStripMenuItem";
-            this.importFromXMLToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.importFromXMLToolStripMenuItem.Text = "&Import from XML";
-            this.importFromXMLToolStripMenuItem.Click += new System.EventHandler(this.importFromXMLToolStripMenuItem_Click);
-            // 
-            // datenAlsCSVExportierenToolStripMenuItem
-            // 
-            this.datenAlsCSVExportierenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("datenAlsCSVExportierenToolStripMenuItem.Image")));
-            this.datenAlsCSVExportierenToolStripMenuItem.Name = "datenAlsCSVExportierenToolStripMenuItem";
-            this.datenAlsCSVExportierenToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.datenAlsCSVExportierenToolStripMenuItem.Text = "&Export to XML";
-            this.datenAlsCSVExportierenToolStripMenuItem.Click += new System.EventHandler(this.datenAlsCSVExportierenToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(163, 6);
-            // 
-            // beendenToolStripMenuItem
-            // 
-            this.beendenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("beendenToolStripMenuItem.Image")));
-            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.beendenToolStripMenuItem.Text = "E&xit";
-            this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
             // 
             // toolsToolStripMenuItem
             // 
@@ -170,14 +124,6 @@
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 23);
             this.toolsToolStripMenuItem.Text = "&Tools";
-            // 
-            // passwordGeneratorToolStripMenuItem
-            // 
-            this.passwordGeneratorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("passwordGeneratorToolStripMenuItem.Image")));
-            this.passwordGeneratorToolStripMenuItem.Name = "passwordGeneratorToolStripMenuItem";
-            this.passwordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.passwordGeneratorToolStripMenuItem.Text = "&Password Generator";
-            this.passwordGeneratorToolStripMenuItem.Click += new System.EventHandler(this.passwordGeneratorToolStripMenuItem_Click);
             // 
             // filterTextBox
             // 
@@ -204,14 +150,6 @@
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 23);
             this.infoToolStripMenuItem.Text = "&Info";
             // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem.Image")));
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -230,7 +168,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.richTextBox1);
             this.splitContainer1.Panel2.Controls.Add(this.toolStrip1);
-            this.splitContainer1.Size = new System.Drawing.Size(596, 344);
+            this.splitContainer1.Size = new System.Drawing.Size(598, 346);
             this.splitContainer1.SplitterDistance = 196;
             this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 1;
@@ -245,7 +183,7 @@
             this.sideMenuListBox.ItemHeight = 15;
             this.sideMenuListBox.Location = new System.Drawing.Point(0, 25);
             this.sideMenuListBox.Name = "sideMenuListBox";
-            this.sideMenuListBox.Size = new System.Drawing.Size(196, 319);
+            this.sideMenuListBox.Size = new System.Drawing.Size(196, 321);
             this.sideMenuListBox.TabIndex = 4;
             this.sideMenuListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.sideMenuListBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listBox1_KeyUp);
@@ -262,15 +200,6 @@
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
-            // addBtn
-            // 
-            this.addBtn.Image = ((System.Drawing.Image)(resources.GetObject("addBtn.Image")));
-            this.addBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(79, 22);
-            this.addBtn.Text = "&Add Entry";
-            this.addBtn.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
             // richTextBox1
             // 
             this.richTextBox1.AutoWordSelection = true;
@@ -280,7 +209,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(0, 25);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(398, 319);
+            this.richTextBox1.Size = new System.Drawing.Size(400, 321);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -292,33 +221,15 @@
             this.copyBtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(398, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(400, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // editContentBtn
-            // 
-            this.editContentBtn.Image = ((System.Drawing.Image)(resources.GetObject("editContentBtn.Image")));
-            this.editContentBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.editContentBtn.Name = "editContentBtn";
-            this.editContentBtn.Size = new System.Drawing.Size(93, 22);
-            this.editContentBtn.Text = "&Edit Content";
-            this.editContentBtn.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // copyBtn
-            // 
-            this.copyBtn.Image = ((System.Drawing.Image)(resources.GetObject("copyBtn.Image")));
-            this.copyBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copyBtn.Name = "copyBtn";
-            this.copyBtn.Size = new System.Drawing.Size(108, 22);
-            this.copyBtn.Text = "&Copy Password";
-            this.copyBtn.Click += new System.EventHandler(this.copyBtn_Click);
             // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.FileName = "passwords";
-            this.saveFileDialog1.Filter = "XML Files|*.xml";
-            this.saveFileDialog1.Title = "Export as XML File";
+            this.saveFileDialog1.Filter = "XML File|*.xml";
+            this.saveFileDialog1.Title = "Export";
             // 
             // openFileDialog1
             // 
@@ -332,9 +243,9 @@
             this.entriesLabel,
             this.toolStripStatusLabel2,
             this.versionLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 377);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 379);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(602, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(604, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -361,7 +272,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox1.Image = global::PM.Gui.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(581, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(583, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(16, 16);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -369,11 +280,110 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // addToolStripMenuItem
+            // 
+            this.addToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addToolStripMenuItem.Image")));
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.addToolStripMenuItem.Text = "Add Entry";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editToolStripMenuItem.Image")));
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.editToolStripMenuItem.Text = "Rename";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.deleteToolStripMenuItem.Text = "Delete Entry";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // addBtn
+            // 
+            this.addBtn.Image = ((System.Drawing.Image)(resources.GetObject("addBtn.Image")));
+            this.addBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(79, 22);
+            this.addBtn.Text = "&Add Entry";
+            this.addBtn.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // editContentBtn
+            // 
+            this.editContentBtn.Image = ((System.Drawing.Image)(resources.GetObject("editContentBtn.Image")));
+            this.editContentBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.editContentBtn.Name = "editContentBtn";
+            this.editContentBtn.Size = new System.Drawing.Size(93, 22);
+            this.editContentBtn.Text = "&Edit Content";
+            this.editContentBtn.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // copyBtn
+            // 
+            this.copyBtn.Image = ((System.Drawing.Image)(resources.GetObject("copyBtn.Image")));
+            this.copyBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copyBtn.Name = "copyBtn";
+            this.copyBtn.Size = new System.Drawing.Size(108, 22);
+            this.copyBtn.Text = "&Copy Password";
+            this.copyBtn.Click += new System.EventHandler(this.copyBtn_Click);
+            // 
+            // importFromXMLToolStripMenuItem
+            // 
+            this.importFromXMLToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("importFromXMLToolStripMenuItem.Image")));
+            this.importFromXMLToolStripMenuItem.Name = "importFromXMLToolStripMenuItem";
+            this.importFromXMLToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.importFromXMLToolStripMenuItem.Text = "&Import from XML";
+            this.importFromXMLToolStripMenuItem.Click += new System.EventHandler(this.importFromXMLToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItem1.Text = "&Export as XML";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.datenAlsCSVExportierenToolStripMenuItem_Click);
+            // 
+            // datenAlsCSVExportierenToolStripMenuItem
+            // 
+            this.datenAlsCSVExportierenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("datenAlsCSVExportierenToolStripMenuItem.Image")));
+            this.datenAlsCSVExportierenToolStripMenuItem.Name = "datenAlsCSVExportierenToolStripMenuItem";
+            this.datenAlsCSVExportierenToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.datenAlsCSVExportierenToolStripMenuItem.Text = "Export as &Markdown";
+            this.datenAlsCSVExportierenToolStripMenuItem.Click += new System.EventHandler(this.datenAlsCSVExportierenToolStripMenuItem_Click_1);
+            // 
+            // beendenToolStripMenuItem
+            // 
+            this.beendenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("beendenToolStripMenuItem.Image")));
+            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.beendenToolStripMenuItem.Text = "E&xit";
+            this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
+            // 
+            // passwordGeneratorToolStripMenuItem
+            // 
+            this.passwordGeneratorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("passwordGeneratorToolStripMenuItem.Image")));
+            this.passwordGeneratorToolStripMenuItem.Name = "passwordGeneratorToolStripMenuItem";
+            this.passwordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.passwordGeneratorToolStripMenuItem.Text = "&Password Generator";
+            this.passwordGeneratorToolStripMenuItem.Click += new System.EventHandler(this.passwordGeneratorToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem.Image")));
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 399);
+            this.ClientSize = new System.Drawing.Size(604, 401);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
@@ -438,6 +448,7 @@
         private System.Windows.Forms.ToolStripStatusLabel entriesLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

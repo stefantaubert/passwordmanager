@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PM.Gui</RootNamespace>
-    <AssemblyName>Password Manager</AssemblyName>
+    <AssemblyName>password-manager</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>1478712105_key_safety_lock_unlock_safe_access.ico</ApplicationIcon>
+    <ApplicationIcon>final1_T9I_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -147,7 +147,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1478712105_key_safety_lock_unlock_safe_access.ico" />
+    <Content Include="final1_T9I_icon.ico" />
+    <None Include="Resources\final1.png" />
     <None Include="Resources\1471047727_lock_locked_log_login_padlock_password_private_protection_register_registration_registry_safe_safety_secret_secure_security.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\1471049460_close_delete_remove_icon.png" />
