@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/icon/final_square.png">
+</p>
+
 # Password Manager
 Simple tool for managing passwords and keys.
 
