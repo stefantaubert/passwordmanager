@@ -64,7 +64,7 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.1891F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.0597F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(302, 183);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(308, 183);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // labelProductName
@@ -74,7 +74,7 @@
             this.labelProductName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.labelProductName.MaximumSize = new System.Drawing.Size(0, 17);
             this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(293, 17);
+            this.labelProductName.Size = new System.Drawing.Size(299, 17);
             this.labelProductName.TabIndex = 19;
             this.labelProductName.Text = "Produktname";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -86,7 +86,7 @@
             this.labelVersion.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.labelVersion.MaximumSize = new System.Drawing.Size(0, 17);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(293, 17);
+            this.labelVersion.Size = new System.Drawing.Size(299, 17);
             this.labelVersion.TabIndex = 0;
             this.labelVersion.Text = "Version";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -98,7 +98,7 @@
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 17);
             this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(293, 17);
+            this.labelCopyright.Size = new System.Drawing.Size(299, 17);
             this.labelCopyright.TabIndex = 21;
             this.labelCopyright.Text = "Copyright";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,7 +112,7 @@
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
             this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription.Size = new System.Drawing.Size(293, 55);
+            this.textBoxDescription.Size = new System.Drawing.Size(299, 55);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
             this.textBoxDescription.Text = "Beschreibung";
@@ -121,7 +121,7 @@
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(224, 159);
+            this.okButton.Location = new System.Drawing.Point(230, 159);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 21);
             this.okButton.TabIndex = 24;
@@ -134,7 +134,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(6, 57);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(293, 19);
+            this.linkLabel1.Size = new System.Drawing.Size(299, 19);
             this.linkLabel1.TabIndex = 25;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "http://stefantaubert.com/";
@@ -147,10 +147,10 @@
             this.linkLabel2.Location = new System.Drawing.Point(6, 76);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(293, 19);
+            this.linkLabel2.Size = new System.Drawing.Size(299, 19);
             this.linkLabel2.TabIndex = 26;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "http://iconfinder.com/iconsets/basic-user-interface-elements";
+            this.linkLabel2.Text = "http://iconfinder.com/iconsets/basic-user-interface-elements/\r\n";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // pictureBox1
@@ -168,7 +168,7 @@
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 201);
+            this.ClientSize = new System.Drawing.Size(512, 201);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
