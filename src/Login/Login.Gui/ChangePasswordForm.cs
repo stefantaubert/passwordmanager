@@ -63,23 +63,23 @@ namespace LoginGui
         {
             if (!pwInfo.PasswordIsCorrect(this.textBoxOld.Text))
             {
-                MessageBox.Show("The current password is wrong!");
+                MessageBox.Show("The current password is wrong!", "Wrong password");
                 DialogResult = DialogResult.None;
             }
             else if (this.textBoxNew.Text.Length < 8)
             {
-                MessageBox.Show("Password must be at least 8 characters.");
+                MessageBox.Show("Password must be at least 8 characters.", "Password too short");
                 DialogResult = DialogResult.None;
             }
             else if (string.IsNullOrEmpty(this.textBoxNew.Text) || this.textBoxNew.Text != this.textBoxNewConfirmed.Text)
             {
-                MessageBox.Show("Please enter and confirm a new valid password!");
+                MessageBox.Show("Please enter and confirm a new valid password!", "Confirm");
                 DialogResult = DialogResult.None;
             }
-          
+
             else if (this.textBoxNew.Text == this.textBoxOld.Text)
             {
-                MessageBox.Show("Please enter a different password.");
+                MessageBox.Show("Please enter a different password.", "Different password");
                 DialogResult = DialogResult.None;
             }
             else
@@ -87,7 +87,7 @@ namespace LoginGui
                 pwInfo.ChangePassword(this.textBoxOld.Text, this.textBoxNew.Text, Convert.ToUInt32(this.numericUpDown1.Value));
                 pwInfo.Save(this.passwordFilePath);
 
-                MessageBox.Show("Password successfully changed!");
+                MessageBox.Show("Password successfully changed!", "Success");
 
                 DialogResult = DialogResult.OK;
             }

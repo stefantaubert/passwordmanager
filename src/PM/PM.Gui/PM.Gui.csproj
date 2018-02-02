@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>final1_T9I_icon.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -148,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="final1_T9I_icon.ico" />
+    <Content Include="icon.ico" />
+    <None Include="Resources\if_exit-delete-remove-close-x_2931151.png" />
+    <None Include="Resources\if_search-zoom-fit_2931190.png" />
     <None Include="Resources\final1.png" />
     <None Include="Resources\1471047727_lock_locked_log_login_padlock_password_private_protection_register_registration_registry_safe_safety_secret_secure_security.png" />
     <None Include="Resources\search.png" />

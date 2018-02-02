@@ -68,7 +68,7 @@ namespace LoginGui
             }
             else
             {
-                MessageBox.Show("You entered a wrong password!");
+                MessageBox.Show("You entered a wrong password!", "Wrong Password!");
                 this.textBox1.SelectAll();
                 this.DialogResult = DialogResult.None;
             }

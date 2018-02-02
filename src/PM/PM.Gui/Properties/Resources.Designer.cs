@@ -63,17 +63,6 @@ namespace PM.Gui.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1471047727_lock_locked_log_login_padlock_password_private_protection_register_registration_registry_safe_safety_secret_secure_security {
-            get {
-                object obj = ResourceManager.GetObject("1471047727_lock_locked_log_login_padlock_password_private_protection_register_reg" +
-                        "istration_registry_safe_safety_secret_secure_security", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);

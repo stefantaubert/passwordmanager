@@ -11,7 +11,8 @@ namespace PM.Gui
 {
     partial class AboutDialog : Form
     {
-        private const string personalPage = "http://www.stefantaubert.com";
+        private const string personalPage = "http://www.stefantaubert.com/";
+        private const string iconPage = "http://iconfinder.com/iconsets/basic-user-interface-elements/";
 
         public AboutDialog()
         {
@@ -22,6 +23,7 @@ namespace PM.Gui
             this.labelCopyright.Text = AssemblyCopyright;
             this.textBoxDescription.Text = AssemblyDescription;
             this.linkLabel1.Text = personalPage;
+            this.linkLabel2.Text = iconPage;
         }
 
         #region Assemblyattributaccessoren
@@ -113,6 +115,11 @@ namespace PM.Gui
         private void AboutDialog_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(iconPage);
         }
     }
 }

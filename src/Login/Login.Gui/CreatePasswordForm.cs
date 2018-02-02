@@ -38,14 +38,14 @@ namespace LoginGui
         {
             if (this.textBoxPass.Text.Length < 8)
             {
-                MessageBox.Show("Password must be at least 8 characters.");
+                MessageBox.Show("Password must be at least 8 characters.", "Password too short!");
                 DialogResult = DialogResult.None;
             }
-             else   if (!string.IsNullOrEmpty(this.textBoxPass.Text) && this.textBoxPass.Text == this.textBoxPassConfirmed.Text)
+            else if (!string.IsNullOrEmpty(this.textBoxPass.Text) && this.textBoxPass.Text == this.textBoxPassConfirmed.Text)
             {
                 var createdPw = PasswordInformation.Create(this.passwordFilePath, this.textBoxPass.Text, Convert.ToUInt32(this.numericUpDown1.Value));
 
-                MessageBox.Show("Password successfully created!");
+                MessageBox.Show("Password successfully created!", "Success");
 
                 this.authenticationResult.EnteredPasswordAsString = this.textBoxPass.Text;
                 this.authenticationResult.PasswordSalt = createdPw.PasswordSalt;
@@ -55,7 +55,7 @@ namespace LoginGui
             }
             else
             {
-                MessageBox.Show("Please enter and confirm a valid password!");
+                MessageBox.Show("Please enter and confirm a valid password!", "Confirm");
                 DialogResult = DialogResult.None;
             }
         }
