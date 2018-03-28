@@ -18,7 +18,17 @@ namespace PM.Gui
             InitializeComponent();
 
             this.DrawMailComboBox();
-            this.mailComboBox.SelectedIndex = 0;
+
+            if (this.mailComboBox.Items.Count > 1)
+            {
+                this.mailComboBox.SelectedIndex = 1;
+
+            }
+            else
+            {
+                this.mailComboBox.SelectedIndex = 0;
+            }
+
             this.keyTextBox.Text = CryptedRandomString.GenerateIdentifier(30, true, true, true, true);
         }
 
